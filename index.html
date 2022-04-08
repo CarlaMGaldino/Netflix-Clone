@@ -20,13 +20,19 @@
     <div class="container">
       <h1 class="logo"></h1>
       <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Séries</a>
-        <a href="#">Filmes</a>
-        <a href="#">Documentários</a>
-        <a href="#">
-          <div class="img-usuario" id="img-index"></div>
-        </a>
+        <ul class="topnav">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#series">Séries</a></li>
+          <li><a href="#filmes">Filmes</a></li>
+          <li><a href="#criancas">infantil</a></li>
+          <li><a href="#">
+              <div class="img-usuario" id="img-index"></div>
+            </a></li>
+          <li class="icon">
+            <!--Inclui o ícone do responsivo na lista-->
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;
+            </a>
+        </ul>
       </nav>
     </div>
   </header>
@@ -54,7 +60,7 @@
     </div>
   </main>
 
-  <section class="carrousel-imgs">
+  <section id="series" class="carrousel-imgs">
     <div class="container box-categorias">
       <h2>Melhores Séries</h2>
       <div class="owl-carousel owl-theme">
@@ -97,7 +103,7 @@
       </div>
     </div>
     <!--filmes para familia-->
-    <div class="container box-categorias">
+    <div id="filmes" class="container box-categorias">
       <h2>Filmes para família</h2>
       <div class="owl-carousel owl-theme">
         <div class="item">
@@ -139,7 +145,7 @@
       </div>
     </div>
     <!--Para as crianças-->
-    <div class="container box-categorias">
+    <div id="criancas" class="container box-categorias">
       <h2>Para as crianças</h2>
       <div class="owl-carousel owl-theme">
         <div class="item">
@@ -185,7 +191,7 @@
   <footer>
     Desenvolvido por Carla Galdino - Interface Netflix projeto Digital Inovation One
   </footer>
-
+  <script src="js/menu-mobile.js"></script>
   <script src="js/owl/jquery.min.js"></script>
   <script src="js/owl/owl.carousel.min.js"></script>
   <script src="js/inicio.js"></script>

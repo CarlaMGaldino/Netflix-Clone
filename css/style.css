@@ -50,15 +50,15 @@ h2 {
   margin-bottom: 20px;
 }
 
-
 header nav a {
   text-decoration: none;
   color: #AAA;
-  margin-right: 10px;
+  font-size: 18px;
 }
 
 header nav a:hover {
   color: #fff;
+  font-size: 22px;
 }
 
 nav {
@@ -66,6 +66,16 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-right: 20px;
+}
+
 
 .img-usuario {
   background-image: url('https://occ-0-152-185.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABUCZYfPbupvQjzSa3egePk8TFNDy2A_w15DEAq50IqW8MYmOtmbWwN4Txem7mgNYEMPJ1BY6uasiIJQ8JeFO3EU.png?r=b97');
@@ -186,8 +196,8 @@ img.icones-informacoes {
 }
 
 section.carrousel-imgs {
-  margin-top: 55px;
-  margin-bottom: 55px;
+  padding-top: 85px;
+  margin-bottom: 85px;
 }
 
 .box-filmes {
@@ -210,63 +220,160 @@ footer {
   height: 85px;
 }
 
-/*Página inicial*/
-
-section.inicio {
-  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('https://assets.nflxext.com/ffe/siteui/vlv3/0bd3a69d-6790-4edc-9818-1c8c558946c2/64643bdf-d283-4d45-b0e9-2b9255667e2b/BR-pt-20220329-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 90vh;
-  width: 100%;
-  padding-top: 200px;
-  padding-bottom: 100px;
-}
-
-.box-inicio {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 400px;
-}
-
-.box-inicio h2 {
-  font-size: 45px;
-  text-align: center;
-  text-transform: initial;
-}
-
-p.box-inicial__p {
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-p.bo-inicial__p2 {
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-form.box-inicial {
+ul {
   display: flex;
   flex-direction: row;
-}
-
-input#nome {
-  height: 60px;
-  width: 400px;
-}
-
-#enviar {
-  background-color: var(--vermelho);
-  border: none;
-  width: 200px;
-  height: 60px;
-  color: #fff;
-  font-weight: bold;
-  font-size: 23px;
-  text-decoration: none;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+}
+
+
+li.icon {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .filme-principal {
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 90vh;
+  }
+
+  header .logo {
+    width: 160px;
+  }
+
+  .img-principal {
+    width: 73%;
+    height: 141px;
+    margin-bottom: 41px;
+  }
+
+
+  .filme-principal .descricao {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+
+  .botoes {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .botao-informacoes {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .owl-carousel .owl-item img {
+    width: 73%;
+  }
+
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    font-size: 40px !important;
+  }
+
+  footer {
+    font-size: 14px;
+    text-align: center;
+    line-height: 21px;
+  }
+
+
+  li.icon {
+    display: none;
+  }
+
+
+  ul.topnav li {
+    display: none;
+  }
+
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+
+  .img-usuario {
+    display: none;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: initial;
+    align-items: initial;
+    justify-content: space-around;
+  }
+
+  ul.topnav.responsive {
+    position: relative;
+    background: rgba(0, 0, 0, 0.75);
+    height: 200px;
+    padding-top: 27px;
+    padding-bottom: 10px;
+    line-height: 5px;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  ul.topnav.responsive li {
+    text-align: center;
+    float: none;
+    padding: 0;
+    display: inline;
+
+  }
+
+  ul.topnav.responsive li a {
+    display: block;
+    padding: 0;
+    text-align: left;
+    line-height: 35px;
+    text-align: center;
+  }
+
+  li.icon {
+    display: block;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: initial;
+    justify-content: space-between;
+  }
+
+  li.icon a {
+    font-size: 40px !important;
+  }
+
+}
+
+@media screen and (max-width: 350px) {
+  ul.topnav.responsive {
+    height: 200px;
+    padding-top: initial;
+    width: 154px;
+    margin-top: 16px;
+    margin-right: initial;
+  }
+
 }
