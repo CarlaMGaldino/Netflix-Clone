@@ -1,7 +1,7 @@
 
 ## NETFLIX-CLONE
 
-### Poojeto Desenvolvido para o Bootcamp da Digital Innovation One.
+### Projeto Desenvolvido para o Bootcamp da Digital Innovation One.
 ### Trabalhando com JQUERY, CSS, HTML
 
 <div align="center">
